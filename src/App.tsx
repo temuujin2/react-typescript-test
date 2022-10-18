@@ -5,10 +5,17 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <h1>Bogino</h1>
+        <div className='login-section'>
+          <p>ХЭРХЭН АЖИЛЛАДАГ ВЭ?</p>
+          <button>НЭВТРЭХ</button>
+        </div>
+        <div className='logo-shape'>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <h1>Boginoo</h1>
         <form>
           <input type="text" placeholder='https://www.web-huudas.mn'></input>
           <button>БОГИНОСГОХ</button>

@@ -21,10 +21,23 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.login-section {
+  width: 80%;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content:right;
+  gap: 20px;
+}
+.login-section p {
+  color: #00b589;
+  font-size: 16px;
+  font-weight: 700;
+} 
+
 h1 {
   font-family: 'Lobster Two', cursive;
   color: #00b589;
@@ -40,6 +53,7 @@ h1 {
   padding: 10px 20px;
   border-radius: 2rem;
   font-size: 18px;
+  font-weight: 100;
   border: none;
   outline: none;
   color: gray;
@@ -51,21 +65,52 @@ h1 {
 .App form input:focus::placeholder {
   color: transparent;
 }
-.App form button {
+.App button {
   cursor: pointer;
-  padding:  10px 20px;
-  font-size: 20px;
+  height: 40px;
+  padding: 0 40px;
+  font-size: 16px;
+  font-weight: 700;
   border-radius: 2rem;
   border: none;
   background: #00b589;
   color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo-shape {
+  margin-top: 150px;
+  width: 80px;
+  height: 40px;
+  /* background-color: burlywood; */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo-shape div:nth-child(1) {
+  width: 30px;
+  height: 100%;
+  background-color: #00b589;
+  border-radius: 20px 5px 5px 20px;
+}
+.logo-shape div:nth-child(2) {
+  width: 30px;
+  height: 100%;
+  background-color: #00b589;
+  border-radius: 5px 20px 20px 5px;
+}
+.logo-shape div:nth-child(3) {
+  position: absolute;
+  left: 5px;
+  width: 70px;
+  height: 30px;
+  background: white;
+  border-radius: 30px;
+}
+.logo-shape div:nth-child(4) {
+  position: absolute;
+  left: 25%;
+  width: 40px;
+  height: 5px;
+  background-color: #00b589;
 }
